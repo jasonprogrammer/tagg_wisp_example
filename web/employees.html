@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>@title</title>
+</head>
+
+<body>
+  <div class="@settings.className">
+    <for items="people" item="person" index="i">
+      <for items="person.Nicknames" item="nickname" index="j">
+        <div>@i @j <strong>@nickname</strong></div>
+      </for>
+    </for>
+    <employees people="people"/>
+  </div>
+</body>
+
+</html>
